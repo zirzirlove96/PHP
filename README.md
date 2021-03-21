@@ -7,6 +7,7 @@ PHP application : 확장자가 php인 파일(소프트웨어)
 
 ## apache2 -> htdoc : document root   
 ### phpinfo.php 파일을 root에 생성하면 "localhost:/phpinfo.php" 를 브라우저로 열 수 있다.
+### ex ) "localhost:/폴더명/파일이름.php"
 
 ```
 <?php
@@ -16,10 +17,10 @@ phpinfo();
 
 * <?php?> => php 문법이 시작되므로 php문법으로 해석하자!
 * echo => 출력
+* 또한 PHP는 html보다 먼저 수행해야하는 우선순위가 있다. 따라서 페이지에 접속할 때 php를 수행시킨다.
 
 Web Browser가 OS(window, Mac)에게 요청한 일을 LAN을 이용하여 이동하고, 인터넷으로 그리고 server의 OS(Apache) 실행하고
 OS는 PHP engine에게 요청을 전달한다. 
-
 
 
 
