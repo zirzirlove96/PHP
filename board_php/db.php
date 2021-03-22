@@ -1,15 +1,16 @@
+
+
 <?php
 
-header('Content-Type: text/html; charset=utf-8');
+	header('Content-Type: text/html; charset=utf-8'); // utf-8인코딩
 
-//host, db 아이디, db pw, db명
-$db = new mysqli("localhost", "root", "wldud0846", "php");
-$db->set_charset("utf8");//db문자열 utf-8 인코딩
+	// localhost = DB주소, web=DB계정아이디, 1234=DB계정비밀번호, post_board="DB이름"
+	$db = new mysqli("localhost","root","wldud0846","php"); 
+	$db->set_charset("utf8");
 
-function mq($sql)
-{
-    global $db;//global은 외부에서 선언된 $sql을 함수내에서 사용할 수 있게 한다.
-    return $db->query($sql);
-}
-
+	function mq($sql)
+	{
+		global $db;
+		return $db->query($sql);
+	}
 ?>
