@@ -27,7 +27,7 @@ OS는 PHP engine에게 요청을 전달한다.
 ### require VS include 
 - 비슷한 역할이지만 require은 사용할 수 없는 파일을 받았을 때 fatal error를 발생시키고 include는 warning error를 발생시킨다.
 
-## namespace : 함수,상수,클래스 등 이름이 같은 것들을 참조할 때 충돌을 일으키는 것을 빙자하기 위해 사용된다.
+## namespace : 함수,상수,클래스 등 이름이 같은 것들을 참조할 때 충돌을 일으키는 것을 방지하기 위해 사용된다.
 
 ```
 namespace를 디렉토리라고 생각하자!
