@@ -42,5 +42,10 @@ EX) namespace language\ko;
     //서로 다른 디렉토리에 있으므로 충돌이 일어나지 않게 한다.
 
 
+### 파일을 다루는 과정 속에서 발생하는 오류 : failed to open stream
+-> 파일을 읽어 올 때 권한에 대한 거부를 당했을 때 발생
+-> 파일 권한 (d)USER-GROUP-OTHER
+-> sudo chown [변경할 소유자] [변경할 파일] (파일에 대한 소유자명을 변경하고 싶을 때) : sudo chown root file.txt
+-> sudo chmod [변경할 퍼미션값] [변경할 파일] (파일에 대한 r,w,x 값을 주는 것) : sudo chmod 777 file.txt
 
                   
